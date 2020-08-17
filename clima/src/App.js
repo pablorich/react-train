@@ -11,7 +11,7 @@ function App() {
 
   useEffect(()=>{
     setCurrentHour(new Date().getHours())
-    Axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=19.702188&lon=-103.464852&exclude=minutely&units=metric&appid=89d030a383537f1817a10d812083f42d')
+    Axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=19.702188&lon=-103.464852&exclude=minutely&units=metric&appid=APPID')
     .then(res => setTemp(res.data.hourly.map((x) => {
       return x.feels_like
     })))
