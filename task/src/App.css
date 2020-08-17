@@ -19,7 +19,7 @@
 }
 
 .char-component {
-    display: inline-block;
+    display: inline;
     padding: 16px;
     text-align: center;
     margin: 16px;

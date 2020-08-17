@@ -7,15 +7,18 @@ import CharComponent from './char-component/charComponent';
 function App() {
     const [myString, setMyString] = useState('')
     let strLen = myString.length;
+    
     const updateString = (newString) => {
         setMyString(newString)
         strLen = newString.length
     }
+    
     const deleteChar = (index) => {
         let newString = myString.split('')
         newString.splice(index,1)
         setMyString(newString.join(''))
     }
+
     return (
         <div className = "App" >
             <header className = "App-header">
